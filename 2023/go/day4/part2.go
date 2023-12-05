@@ -11,7 +11,7 @@ import (
 	"github.com/Goldziher/go-utils/sliceutils"
 )
 
-func main() {
+func part2() {
 	lines := countLines("input.txt")
 	file, err := os.Open("input.txt")
 	if err != nil {

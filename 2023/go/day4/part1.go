@@ -19,7 +19,7 @@ type Card struct {
 
 type Cards []Card
 
-func main() {
+func part1() {
 	var cards Cards
 	file, err := os.Open("input.txt")
 	if err != nil {
