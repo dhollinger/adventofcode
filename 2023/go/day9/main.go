@@ -56,7 +56,7 @@ func intconv(line string) []int {
 	return numSeq
 }
 
-func lcd(src []int) int {
+func nextLineNum(src []int) int {
 	res := make([]int, len(src)-1)
 	hasNonZero := false
 	for i := 1; i < len(src); i++ {
@@ -70,7 +70,7 @@ func lcd(src []int) int {
 		return src[len(src)-1]
 	}
 
-	return src[len(src)-1] + lcd(res)
+	return src[len(src)-1] + nextLineNum(res)
 }
 
 func prevLineNum(src []int) int {
